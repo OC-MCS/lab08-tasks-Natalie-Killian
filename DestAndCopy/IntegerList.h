@@ -11,6 +11,8 @@ private:
    bool isValid(int) const;   // Validates subscripts.
 public:
    IntegerList(int);          // Constructor
+   IntegerList(const IntegerList& other); // Copy constructor
+   ~IntegerList();			  // Destructor
    void setElement(int, int); // Sets an element to a value
    int getElement(int) const; // Returns an element
    int getNumElements() const;

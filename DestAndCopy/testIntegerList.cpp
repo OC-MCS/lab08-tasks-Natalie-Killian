@@ -20,4 +20,9 @@ int main()
 	cout << "A's values:" << endl;
 	display(a);
 
+	IntegerList b(a);
+
+	cout << "B's values:" << endl;
+	display(b);
+
 }

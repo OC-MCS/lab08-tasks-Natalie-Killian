@@ -15,6 +15,29 @@ IntegerList::IntegerList(int size)
       list[ndx] = 0;
 }
 
+// copy constructor as an assignment operator
+IntegerList::IntegerList(const IntegerList& other)
+{
+	numElements = other.numElements;
+
+	list = new int[numElements];
+	for (int i = 0; i < numElements; i++)
+	{
+		list[i] = other.list[i];
+	}
+}
+
+
+//***********************************************************
+// The destructor deletes the dynamically allocated memory. *
+//***********************************************************
+IntegerList::~IntegerList()
+{
+	delete[] list;
+
+}
+
+
 
 //***********************************************************
 // isValid member function.                                 *
