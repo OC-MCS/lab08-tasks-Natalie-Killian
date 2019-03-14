@@ -16,4 +16,5 @@ public:
    void setElement(int, int); // Sets an element to a value
    int getElement(int) const; // Returns an element
    int getNumElements() const;
+   IntegerList operator=(IntegerList &other); // overloaded assignment operator
 };
